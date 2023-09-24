@@ -11,7 +11,7 @@
     <style type="text/tailwindcss">
       @layer utilities {
         .max-container {
-          max-width: 1440px;
+          max-width: 1200px;
           width: 96%;
           margin: 0 auto;
         }
@@ -26,14 +26,14 @@
     </style>
   </head>
   <body>
-    <nav class="bg-white shadow-md py-1">
+    <nav class="bg-white sticky top-0 shadow-md py-1">
       <div class="max-container flex justify-between items-center">
         <img
           class="w-[120px] max-md:w-[100px]"
           src="./images/badge.png"
           alt="logo"
         />
-        <div class="flex gap-10 text-lg max-md:hidden">
+        <div class="flex gap-10 text-base text-gray-500 max-md:hidden">
           <a href="#">Home</a>
           <a href="#">Gallery</a>
           <a href="#">Events</a>
@@ -49,10 +49,12 @@
     <div
       id="sidebar"
       style="right: -100%"
-      class="md:hidden side-transition fixed min-h-screen top-0 flex justify-between w-full"
+      class="z-10 md:hidden side-transition fixed min-h-screen top-0 flex justify-between w-full"
     >
       <div class="w-[50%]" onclick="hidebar()"></div>
-      <div class="flex justify-between w-[50%] bg-blue-800 text-lg text-white p-5">
+      <div
+        class="flex justify-between w-[50%] bg-blue-800 text-lg text-white p-5"
+      >
         <div class="flex flex-col gap-6">
           <a href="#">Home</a>
           <a href="#">Gallery</a>
@@ -63,6 +65,12 @@
         <i class="fa-solid fa-xmark side-icon" onclick="hidebar()"></i>
       </div>
     </div>
+
+    <div>
+      <img src="images/cover1.jpg" alt="">
+      <div class=" text-white py-100">Welcome to Thisagoma</div>
+    </div>
+
     <script>
       const sidebar = document.getElementById("sidebar");
       function opens() {
