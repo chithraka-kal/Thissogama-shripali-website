@@ -24,13 +24,19 @@
         }
       }
     </style>
+    <!-- News slider css -->
+    <!-- Swiper CSS -->
+    <link rel="stylesheet" href="css/swiper-bundle.min.css" />
+    <!-- CSS -->
+    <link rel="stylesheet" href="css/recent.css" /> 
+
   </head>
   <body>
     <nav class="bg-white sticky top-0 shadow-md py-1 z-10">
       <div class="max-container flex justify-between items-center">
         <img
           class="w-[120px] max-md:w-[100px]"
-          src="./images/badge.png"
+          src="./images/badge.jpeg"
           alt="logo"
         />
         <div class="flex gap-10 text-base text-gray-500 max-md:hidden">
@@ -75,6 +81,122 @@
         <button type="button" class="text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 mr-2  dark:bg-blue-600 dark:hover:bg-blue-700 focus:outline-none dark:focus:ring-blue-800">Contact us</button>
       </div>
     </div>
+
+    <!-- News slider starts -->
+    <div class="slide">
+      <div class="container swiper">
+        <div class="slide-container">
+          <div class="card-wrapper swiper-wrapper">
+  
+            <!-- 1 -->
+            <div class="card swiper-slide">
+              <div class="image-box">
+                <a href="#">
+                    <img class="rounded-t-lg" src="images/AAA.jpg" alt="" />
+                  </a>
+              </div>
+                <div class="content-box">
+                    <a href="#">
+                        <h5 class="name">Noteworthy technology acquisitions 2021</h5>
+                    </a>
+                    <p class="description">Here are the biggest enterprise technology acquisitions of 2021 so far, in reverse chronological order.
+                    </p>
+                    <a href="#" class="read-more-button">
+                      <button class="button">Read More</button>     
+                    </a>
+                </div>
+              </div>
+  
+            <!-- 2 -->
+            <div class="card swiper-slide">
+              <div class="image-box">
+                <a href="#">
+                    <img class="rounded-t-lg" src="images/BBB.jpg" alt="" />
+                  </a>
+              </div>
+                <div class="content-box">
+                    <a href="#">
+                        <h5 class="name">Noteworthy technology acquisitions 2021</h5>
+                    </a>
+                    <p class="description">Here are the biggest enterprise technology acquisitions of 2021 so far, in reverse chronological order.
+                    </p>
+                    <a href="#" class="read-more-button">
+                      <button class="button">Read More</button>     
+                    </a>
+                </div>
+              </div>
+  
+              <!-- 3 -->
+              <div class="card swiper-slide">
+                <div class="image-box">
+                  <a href="#">
+                      <img class="rounded-t-lg" src="images/CCC.jpg" alt="" />
+                    </a>
+                </div>
+                  <div class="content-box">
+                      <a href="#">
+                          <h5 class="name">Noteworthy technology acquisitions 2021</h5>
+                      </a>
+                      <p class="description">Here are the biggest enterprise technology acquisitions of 2021 so far, in reverse chronological order.
+                      </p>
+                      <a href="#" class="read-more-button">
+                        <button class="button">Read More</button>     
+                      </a>
+                  </div>
+                </div>
+   
+                <!-- 4 -->
+                <div class="card swiper-slide">
+                  <div class="image-box">
+                    <a href="#">
+                        <img class="rounded-t-lg" src="images/DDD.jpg" alt="" />
+                      </a>
+                  </div>
+                    <div class="content-box">
+                        <a href="#">
+                            <h5 class="name">Noteworthy technology acquisitions 2021</h5>
+                        </a>
+                        <p class="description">Here are the biggest enterprise technology acquisitions of 2021 so far, in reverse chronological order.
+                        </p>
+                        <a href="#">
+                          <button class="button">Read More</button>     
+                        </a>
+                    </div>
+                  </div> 
+  
+                  <!-- 5 -->
+                  <div class="card swiper-slide">
+                    <div class="image-box">
+                      <a href="#">
+                          <img class="rounded-t-lg" src="images/EEE.jpg" alt="" />
+                        </a>
+                    </div>
+                      <div class="content-box">
+                          <a href="#">
+                              <h5 class="name">Noteworthy technology acquisitions 2021</h5>
+                          </a>
+                          <p class="description">Here are the biggest enterprise technology acquisitions of 2021 so far, in reverse chronological order.
+                          </p>
+                          <a href="#">
+                            <button class="button">Read More</button>     
+                          </a>
+                      </div>
+                    </div>
+  
+          </div>
+        </div>
+        <div class="swiper-button-next swiper-navBtn"></div>
+        <div class="swiper-button-prev swiper-navBtn"></div>
+        <div class="swiper-pagination"></div>
+      </div>
+    </div>
+    <br><br>
+  
+    <script src="js/swiper-bundle.min.js"></script>
+    <script src="js/recent.js"></script>
+  
+    <!-- News slider end -->
+
 
     <script>
       const sidebar = document.getElementById("sidebar");
