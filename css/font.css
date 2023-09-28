@@ -1,0 +1,16 @@
+.sinhala-title {
+    font-family: 'Abhaya Libre', serif;
+    font-size: 50px;
+    font-weight: bolder;
+    text-align: center;
+
+    border-bottom: 3px solid #f9dd94;
+
+}
+
+
+.sinhala-content {
+    text-align: center;
+    font-size: 25px;
+
+}
