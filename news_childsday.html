@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script
+      src="https://kit.fontawesome.com/296e3cb483.js"
+      crossorigin="anonymous"
+    ></script>
+    <style type="text/tailwindcss">
+      @layer utilities {
+        .max-container {
+          max-width: 1200px;
+          width: 96%;
+          margin: 0 auto;
+        }
+        .side-transition {
+          transition: all linear 0.2s;
+        }
+        .side-icon {
+          cursor: pointer;
+          @apply text-xl;
+        }
+      }
+    </style>
+    <!-- News slider css -->
+    <!-- Swiper CSS -->
+    <link rel="stylesheet" href="css/swiper-bundle.min.css" />
+    <!-- CSS -->
+    <link rel="stylesheet" href="css/recent.css" /> 
+
+    <!-- admin Css -->
+    <link rel="stylesheet" href="css/admin.css">
+    <!-- footer CSS -->
+    <link rel="stylesheet" href="css/footer.css">
+
+  </head>
+  <body>
+    <nav class="bg-white sticky top-0 shadow-md py-1 z-10">
+      <div class="max-container flex justify-between items-center">
+        <img
+          class="w-[120px] max-md:w-[100px]"
+          src="./images/badge.jpeg"
+          alt="logo"
+        />
+        <div class="flex gap-10 text-base text-gray-500 max-md:hidden">
+          <a class="hover:text-blue-600" href="#">Home</a>
+          <a class="hover:text-blue-600" href="#">Gallery</a>
+          <a class="hover:text-blue-600" href="#">Events</a>
+          <a class="hover:text-blue-600" href="#">Contact us</a>
+          <a class="hover:text-blue-600" href="#">News</a>
+        </div>
+        <i
+          class="fa-solid fa-bars side-icon md:hidden mr-10"
+          onclick="opens()"
+        ></i>
+      </div>
+    </nav>
+    <div
+      id="sidebar"
+      style="right: -100%"
+      class="z-20 md:hidden side-transition fixed min-h-screen top-0 flex justify-between w-full"
+    >
+      <div class="w-[50%]" onclick="hidebar()"></div>
+      <div
+        class="flex justify-between w-[50%] bg-blue-800 text-lg text-white p-5"
+      >
+        <div class="flex flex-col gap-6">
+          <a href="#">Home</a>
+          <a href="#">Gallery</a>
+          <a href="#">Events</a>
+          <a href="#">Contact us</a>
+          <a href="#">News</a>
+        </div>
+        <i class="fa-solid fa-xmark side-icon" onclick="hidebar()"></i>
+      </div>
+    </div>
+
+    <div class="max-container">
+      <link rel="stylesheet" href="css/News/prefect.css">
+          <section class="hero-section">
+              <div class="container">
+                 <center> <img class="hero-image" alt="hero" src="images/childsdaycover.jpeg"> </center>
+                  <div class="hero-content">
+                      <h1 class="hero-title">Microdosing synth tattooed vexillologist</h1>
+                      <p class="hero-description">Meggings kinfolk echo park stumptown DIY, kale chips beard jianbing tousled. Chambray dreamcatcher trust fund, kitsch vice godard disrupt ramps hexagon mustache umami snackwave tilde chillwave ugh. Pour-over meditation PBR&B pickled ennui celiac mlkshk freegan photo booth af fingerstache pitchfork.</p>
+                  </div>
+              </div>
+          </section>
+      
+      <div class="flex flex-wrap -m-4">
+
+                <div class="lg:w-1/3 sm:w-1/2 p-4">
+                  <div class="flex relative">
+                  <img alt="gallery" class="w-full h-auto" src="images/cd (1).jpeg">
+              </div>
+              </div>
+              <div class="lg:w-1/3 sm:w-1/2 p-4">
+                  <div class="flex relative">
+                  <img alt="gallery" class="w-full h-auto" src="images/cd (2).jpeg">
+              </div>
+              </div>
+              <div class="lg:w-1/3 sm:w-1/2 p-4">
+                  <div class="flex relative">
+                  <img alt="gallery" class="w-full h-auto" src="images/cd (6).jpeg">
+              </div>
+              </div>              
+              <div class="lg:w-1/3 sm:w-1/2 p-4">
+                  <div class="flex relative">
+                  <img alt="gallery" class="w-full h-auto" src="images/cd (5).jpeg">
+              </div>
+              </div>
+              <div class="lg:w-1/3 sm:w-1/2 p-4">
+                  <div class="flex relative">
+                  <img alt="gallery" class="w-full h-auto" src="images/cd (4).jpeg">
+              </div>
+              </div>
+              <div class="lg:w-1/3 sm:w-1/2 p-4">
+                  <div class="flex relative">
+                  <img alt="gallery" class="w-full h-auto" src="images/cd (3).jpeg">
+              </div>
+              </div>
+              
+            </div>
+          </div>
+        </section>
+
+  <script>
+    const sidebar = document.getElementById("sidebar");
+    function opens() {
+      sidebar.style.right = 0;
+    }
+    function hidebar() {
+      sidebar.style.right = "-100%";
+    }
+  </script>
+
+
+  </body>
+</html>
