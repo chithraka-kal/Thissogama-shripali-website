@@ -14,6 +14,9 @@ body, h1, h2, p, ul, li {
     background-color: white;
     color: #333;
     text-align: center;
+    bottom: 0;
+    padding: 1rem 0;
+    position: relative;
 }
 
 
