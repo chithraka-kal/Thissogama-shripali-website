@@ -23,12 +23,11 @@
           @apply text-xl;
         }
       }
+    
     body {
       background-color: rgba(235, 235, 235, 0.514) ;
       
     }
-
-    /* sS */
 
     </style>
     <!-- News slider css -->
@@ -52,16 +51,16 @@
     <nav class="bg-white sticky top-0 shadow-md py-1 z-10">
       <div class="max-container flex justify-between items-center">
         <img
-          class="w-[120px] max-md:w-[100px]"
-          src="./images/badge.jpeg"
+          class="w-[90px] max-md:w-[70px]"
+          src="./images/logo.png"
           alt="logo"
         />
         <div class="flex gap-10 text-base text-gray-500 max-md:hidden">
-          <a class="hover:text-blue-600" href="index.html">Home</a>
-          <a class="hover:text-blue-600" href="#">Gallery</a>
-          <a class="hover:text-blue-600" href="news.html">News</a>
-          <a class="hover:text-blue-600" href="contactus.html">Contact us</a>
-          <a class="hover:text-blue-600" href="application.html">Applications</a>
+          <a class="hover:text-red-600" href="index.html">Home</a>
+          <a class="hover:text-red-600" href="gallery.html">Gallery</a>
+          <a class="hover:text-red-600" href="news.html">News</a>
+          <a class="hover:text-red-600" href="contactus.html">Contact us</a>
+          <a class="hover:text-red-600" href="application.html">Applications</a>
         </div>
         <i
           class="fa-solid fa-bars side-icon md:hidden mr-10"
@@ -76,80 +75,117 @@
     >
       <div class="w-[50%]" onclick="hidebar()"></div>
       <div
-        class="flex justify-between w-[50%] bg-blue-800 text-lg text-white p-5"
+        class="flex justify-between w-[50%] bg-red-800 text-lg text-white px-6 pt-12"
       >
-        <div class="flex flex-col gap-6">
-          <a href="index.html">Home</a>
-          <a href="#">Gallery</a>
-          <a href="news.html">News</a>
-          <a href="contactus.html">Contact us</a>
-          <a href="application.html">Applications</a>
-        </div>
+      <div class="flex flex-col gap-6">
+        <a class="hover:text-yellow-600" href="index.html">Home</a>
+        <a class="hover:text-yellow-600" href="gallery.html">Gallery</a>
+        <a class="hover:text-yellow-600" href="news.html">News</a>
+        <a class="hover:text-yellow-600" href="contactus.html">Contact us</a>
+        <a class="hover:text-yellow-600" href="application.html">Applications</a>
+      </div>
         <i class="fa-solid fa-xmark side-icon" onclick="hidebar()"></i>
       </div>
     </div>
 
     <div class="relative">
-      <img src="images/cover1.jpg" alt="">
-      <div class="absolute text-white md:top-[40%] sm:top-[20%] top-[10%] left-[10%] md:text-6xl sm:text-4xl text-xl font-semibold">
+      <img src="images/cover3.jpg" alt="">
+      <div class="absolute text-white md:bottom-[10%] bottom-[5%] left-[10%] md:text-6xl sm:text-4xl text-xl font-semibold">
         <h1>Welcome to</h1>
-        <h1>Thisagoma Sripali</h1>
+        <h1>Thisogama Sripali</h1>
         <h1>Maha Vidyalaya!</h1>
-        <button type="button" class="text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 mr-2  dark:bg-blue-600 dark:hover:bg-blue-700 focus:outline-none dark:focus:ring-blue-800">Contact us</button>
+        <a href="contactus.html">
+          <button type="button" class="text-white bg-red-700 hover:bg-red-800 focus:ring-4 focus:ring-red-300 font-medium rounded-lg text-sm md:px-5 sm:px-4 px-3 md:py-2.5 sm:py-2 py-0.5 mr-2 focus:outline-none">Contact us</button>
+        </a>
       </div>
     </div>
 
     <!-- intro -->
     <div class="bg-white py-6 sm:py-8 lg:py-12">
       <div class="mx-auto max-w-screen-2xl px-4 md:px-8">
-        <p class="mb-2 text-center font-semibold text-indigo-500 md:mb-3 lg:text-lg">Introducing Thissogama Sripali Website</p>
+        <p class="mb-2 text-center font-semibold text-red-500 md:mb-3 lg:text-lg">Introducing Thisogama Sripali Website</p>
     
         <h1 class="ml11">
           <span class="text-wrapper">
             <span class="line line1"></span>
-            <span class="letters"><h1 class="sinhala-title">ශ්‍රීපාලිය වෙබ් අවකාශයට ඇතුළත් වූ වගයි!!</h1><br>
+            <span class="letters"><h1 class="sinhala-title leading-none">ශ්‍රීපාලිය වෙබ් අවකාශයට ඇතුළත් වූ වගයි!!</h1><br>
             </a></span>
           </span>
         </h1>
-
-
-    
-        <p class="sinhala-content">නව තාක්ශනයේ දොරටු විවර කරමින් අනාගතයට පියනගන්නෙමු...
+        <p class="sinhala-content">නව තාක්ෂණයේ දොරටු විවර කරමින් අනාගතයට පියනගන්නෙමු...
         </p>
       </div>
     </div>
 
     <!-- News slider starts -->
-    <div class="flex max-container justify-between py-10">
-      <div class="bg-gradient-to-r from-cyan-500 to-blue-500 rounded-lg flex flex-col justify-center items-center w-[200px] text-white text-4xl px-5 font-semibold">
+    <div id="projects" class="flex max-container justify-between py-10">
+      <div class="bg-gradient-to-r from-red-800 to-red-500 rounded-lg flex flex-col justify-center items-center w-[200px] max-md:w-[30%] text-white text-4xl max-md:text-2xl px-5 font-semibold">
         <h1>Recent</h1>
-        <h1>Projects</h1>
+        <h1>Events</h1>
       </div>
       <div class="swiper">
         <div class="slide-container">
           <div class="card-wrapper swiper-wrapper">
+               
+                <!-- 4 -->
+                <div class="card swiper-slide hover:bg-red-100">
+                  <div class="image-box">
+                    <a href="news_scholership.html">
+                        <img class="rounded-t-lg" src="images/scholershipcover.jpg" alt="" />
+                      </a>
+                  </div>
+                    <div class="content-box">
+                        <a href="news_scholership.html">
+                            <h5 class="sinhala-content">ශ්‍රීපාලියේ ශිෂ්‍යත්ව <br> හපන්නු</h5>
+                        </a>
+                        <p class="description">2023 ඔක්තොම්බර් 15 වන දින ශිෂ්‍යත්ව විභාගය සඳහා සිසුන් 28 දෙනෙක් කුලි/තිසෝගම ශ්‍රීපාලි ම.වි. හිදී පෙනී සිටියහ...
+                        </p>
+                        <a href="news_scholership.html">
+                          <button class="button text-white bg-red-700 hover:bg-red-800 focus:ring-4 focus:ring-red-300 font-medium rounded-lg text-sm md:px-5 sm:px-4 px-3 md:py-2.5 sm:py-2 py-0.5 mr-2 focus:outline-none">Read More</button>     
+                        </a>
+                    </div>
+                  </div> 
+
+            <!--1-->
+            <div class="card swiper-slide hover:bg-red-100">
+              <div class="image-box">
+                <a href="news_ledandeema.html">
+                    <img class="rounded-t-lg" src="images/le_cover.jpeg" alt="" />
+                      </a>
+                </div>
+                  <div class="content-box">
+                        <a href="news_ledandeema.html">
+                          <h5 class="sinhala-content">ලේ දන් දීමේ වැඩසටහන</h5>
+                        </a>
+                        <p class="description"><br>සියවස් සැමරුම් වැඩසටහන් මාලාවේ තවත් වැඩසටහනක් වූ ලේ දන් දීමේ පිංකම පසුගිය 07 වන දින පාසලේ විදුහල්පතිතුමා, ගුරුවරුන්, සිසුන් හා දෙමාපිය..
+                        </p>
+                      <a href="news_ledandeema.html">
+                        <button class="button text-white bg-red-700 hover:bg-red-800 focus:ring-4 focus:ring-red-300 font-medium rounded-lg text-sm md:px-5 sm:px-4 px-3 md:py-2.5 sm:py-2 py-0.5 mr-2 focus:outline-none">Read More</button>     
+                      </a>
+                    </div>
+          </div>
   
             <!-- 2 -->
-            <div class="card swiper-slide">
+            <div class="card swiper-slide hover:bg-red-100">
               <div class="image-box">
                 <a href="news_perahara.html">
                     <img class="rounded-t-lg" src="images/peraharacover.jpeg" alt="" />
                   </a>
               </div>
-                <div class="content-box">
+                <div class="content-box ">
                     <a href="news_perahara.html">
                         <h5 class="sinhala-content">වෙසක් පෙරහැර <br> 2023</h5>
                     </a>
-                    <p class="description">නව වසර සඳහා තෝරාගත් සිසුන් හට ශිෂ්‍ය නායක නිළ ලාංඡන පැළඳවීම පසුගිය, 2022.09.09 වන දින සිදු කෙරුනා.
+                    <p class="description">බුදු තෙමගුල සැමරීම නිමිති කරගෙන අප විද්‍යාලයේ සිට කොස්හේනාගාර විහාරස්ථානය දක්වා දර්ශනීය පෙරහැරක් සියලු සිසුන්ගේ සහභාගිත්වයෙන්...
                     </p>
                     <a href="news_perahara.html" class="read-more-button">
-                      <button class="button">Read More</button>     
+                      <button class="button text-white bg-red-700 hover:bg-red-800 focus:ring-4 focus:ring-red-300 font-medium rounded-lg text-sm md:px-5 sm:px-4 px-3 md:py-2.5 sm:py-2 py-0.5 mr-2 focus:outline-none">Read More</button>     
                     </a>
                 </div>
               </div>
   
               <!-- 3 -->
-              <div class="card swiper-slide">
+              <div class="card swiper-slide hover:bg-red-100">
                 <div class="image-box">
                   <a href="news_avurudu.html">
                       <img class="rounded-t-lg" src="images/avuruducover.jpeg" alt="" />
@@ -159,74 +195,36 @@
                       <a href="news_avurudu.html">
                           <h5 class="sinhala-content">අලුත් අවුරුදු <br> උත්සවය</h5>
                       </a>
-                      <p class="description">Here are the biggest enterprise technology acquisitions of 2021 so far, in reverse chronological order.
+                      <p class="description">සිංහල අවුරුදු නැකත් චාරිත්‍ර සඳහා මූලිකත්වය ලබාදෙමින් ශ්‍රී පාලියේ සිංහල දෙමළ අලුත් අවුරුදු උත්සවයක් සිසුන්ගේ මූලිකත්වයෙ...
                       </p>
                       <a href="news_avurudu.html" class="read-more-button">
-                        <button class="button">Read More</button>     
+                        <button class="button text-white bg-red-700 hover:bg-red-800 focus:ring-4 focus:ring-red-300 font-medium rounded-lg text-sm md:px-5 sm:px-4 px-3 md:py-2.5 sm:py-2 py-0.5 mr-2 focus:outline-none">Read More</button>     
                       </a>
                   </div>
                 </div>
-   
-                <!-- 4 -->
-                <div class="card swiper-slide">
-                  <div class="image-box">
-                    <a href="news_trip.html">
-                        <img class="rounded-t-lg" src="images/tripcover.jpeg" alt="" />
-                      </a>
-                  </div>
-                    <div class="content-box">
-                        <a href="news_trip.html">
-                            <h5 class="sinhala-content">පාසල් චාරිකාව <br> 2022</h5>
-                        </a>
-                        <p class="description">Here are the biggest enterprise technology acquisitions of 2021 so far, in reverse chronological order.
-                        </p>
-                        <a href="news_trip.html">
-                          <button class="button">Read More</button>     
-                        </a>
-                    </div>
-                  </div> 
   
-                  <!-- 5 -->
-                  <div class="card swiper-slide">
+
+                    <!-- 6 -->
+                  <div class="card swiper-slide hover:bg-red-100">
                     <div class="image-box">
-                      <a href="news_childsday.html">
-                          <img class="rounded-t-lg" src="images/childsdaycover.jpeg" alt="" />
+                      <a href="news_semina.html">
+                          <img class="rounded-t-lg" src="images/Seminacover.jpeg" alt="" />
                         </a>
                     </div>
                       <div class="content-box">
-                          <a href="news_childsday.html">
-                              <h5 class="sinhala-content">ළමා දින සැමරුම<br> 2022</h5>
+                          <a href="news_semina.html">
+                              <h5 class="sinhala-content">5 වසර ශිෂ්‍යත්ව සම්මන්ත්‍රණය<br> 2023</h5>
                           </a>
-                          <p class="description">Here are the biggest enterprise technology acquisitions of 2021 so far, in reverse chronological order.
+                          <p class="description">මෙවර ශිෂ්‍යත්ව විභාගයට මුහුණ දීමට සූදානමින් සිටින සිසුන් සඳහා සම්මන්ත්‍රණ මාලාවක් පසුගිය මස සම්පත්දායකයින් වන...
                           </p>
-                          <a href="news_childsday.html">
-                            <button class="button">Read More</button>     
+                          <a href="news_semina.html">
+                            <button class="button text-white bg-red-700 hover:bg-red-800 focus:ring-4 focus:ring-red-300 font-medium rounded-lg text-sm md:px-5 sm:px-4 px-3 md:py-2.5 sm:py-2 py-0.5 mr-2 focus:outline-none">Read More</button>     
                           </a>
                       </div>
                     </div>
 
->                  
-                    <!-- 6 -->
-                    <div class="card swiper-slide">
-                      <div class="image-box">
-                        <a href="news_semina.html">
-                            <img class="rounded-t-lg" src="images/Seminacover.jpeg" alt="" />
-                          </a>
-                      </div>
-                        <div class="content-box">
-                            <a href="news_semina.html">
-                                <h5 class="sinhala-content">5 වසර ශිෂ්‍යත්ව සම්මන්ත්‍රණය</h5>
-                            </a>
-                            <p class="description">Here are the biggest enterprise technology acquisitions of 2021 so far, in reverse chronological order.
-                            </p>
-                            <a href="news_semina.html" class="read-more-button">
-                              <button class="button">Read More</button>     
-                            </a>
-                        </div>
-                      </div>
-
                   <!-- 1 -->
-                  <div class="card swiper-slide">
+                  <div class="card swiper-slide hover:bg-red-100">
                     <div class="image-box">
                       <a href="news_prefect.html">
                           <img class="rounded-t-lg" src="images/prefectcover.jpeg" alt="" />
@@ -239,10 +237,11 @@
                           <p class="description">නව වසර සඳහා තෝරාගත් සිසුන් හට ශිෂ්‍ය නායක නිළ ලාංඡන පැළඳවීම පසුගිය, 2022.09.09 වන දින සිදු කෙරුනා.
                           </p>
                           <a href="news_prefect.html" class="read-more-button">
-                            <button class="button">Read More</button>     
+                            <button class="button text-white bg-red-700 hover:bg-red-800 focus:ring-4 focus:ring-red-300 font-medium rounded-lg text-sm md:px-5 sm:px-4 px-3 md:py-2.5 sm:py-2 py-0.5 mr-2 focus:outline-none">Read More</button>     
                           </a>
                       </div>
                     </div>
+
 
   
           </div>
@@ -254,44 +253,54 @@
     </div>
     <br><br>
     
-<ol class="relative border-l border-gray-200 dark:border-gray-700 max-container">                  
-    <li class="mb-10 ml-4">
-        <div class="absolute w-3 h-3 bg-gray-200 rounded-full mt-1.5 -left-1.5 border border-white dark:border-gray-900 dark:bg-gray-700"></div>
-        <time class="mb-1 text-sm font-normal leading-none text-gray-400 dark:text-gray-500">February 2022</time>
-        <h3 class="text-lg font-semibold text-gray-900 ">Application UI code in Tailwind CSS</h3>
-        <p class="mb-4 text-base font-normal text-gray-500 dark:text-gray-400">Get access to over 20+ pages including a dashboard layout, charts, kanban board, calendar, and pre-order E-commerce & Marketing pages.</p>
-        <a href="#" class="inline-flex items-center px-4 py-2 text-sm font-medium text-gray-900 bg-white border border-gray-200 rounded-lg hover:bg-gray-100 hover:text-blue-700 focus:z-10 focus:ring-4 focus:outline-none focus:ring-gray-200 focus:text-blue-700 dark:bg-gray-800 dark:text-gray-400 dark:border-gray-600 dark:hover:text-white dark:hover:bg-gray-700 dark:focus:ring-gray-700">Learn more <svg class="w-3 h-3 ml-2" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 14 10">
-    <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M1 5h12m0 0L9 1m4 4L9 9"/>
-  </svg></a>
-    </li>
-    <li class="mb-10 ml-4">
-        <div class="absolute w-3 h-3 bg-gray-200 rounded-full mt-1.5 -left-1.5 border border-white dark:border-gray-900 dark:bg-gray-700"></div>
-        <time class="mb-1 text-sm font-normal leading-none text-gray-400 dark:text-gray-500">March 2022</time>
-        <h3 class="text-lg font-semibold text-gray-900 ">Marketing UI design in Figma</h3>
-        <p class="text-base font-normal text-gray-500 dark:text-gray-400">All of the pages and components are first designed in Figma and we keep a parity between the two versions even as we update the project.</p>
-    </li>
-    <li class="ml-4">
-        <div class="absolute w-3 h-3 bg-gray-200 rounded-full mt-1.5 -left-1.5 border border-white dark:border-gray-900 dark:bg-gray-700"></div>
-        <time class="mb-1 text-sm font-normal leading-none text-gray-400 dark:text-gray-500">April 2022</time>
-        <h3 class="text-lg font-semibold text-gray-900 ">E-Commerce UI code in Tailwind CSS</h3>
-        <p class="text-base font-normal text-gray-500 dark:text-gray-400">Get started with dozens of web components and interactive elements built on top of Tailwind CSS.</p>
-    </li>
-</ol>
+    <ol class="relative border-l border-red-200 dark:border-red-700 max-container">                  
+      <li class="mb-10 ml-4">
+          <div class="absolute w-3 h-3 bg-red-200 rounded-full mt-1.5 -left-1.5 border border-white dark:border-red-900 dark:bg-red-700"></div>
+          <time class="mb-1 text-base font-medium leading-none text-gray-400 dark:text-gray-500">2023 ඔක්තෝම්බර් 01</time>       
+          <h3 class="text-4xl font-extrabold text-gray-900">පාසලේ සියවස් ජයන්තිය සැමරීම</h3>
+          <p class="text-xl text-gray-500 dark:text-gray-500">පාසල් නිල වෙබ් අඩවිය ප්‍රකාශයට පත් කිරීම හා ආදී ගුරු උපහාර උත්සවයක් මෙදිනට යෙදී ඇත.</p>
+      </li>
+      <li class="mb-10 ml-4">
+        <div class="absolute w-3 h-3 bg-red-200 rounded-full mt-1.5 -left-1.5 border border-white dark:border-red-900 dark:bg-red-700"></div>
+        <time class="mb-1 text-base font-medium leading-none text-gray-400 dark:text-gray-500">2023 ඔක්තෝම්බර් 17</time>       
+        <h3 class="text-4xl font-extrabold text-gray-900">රාත්‍රී ධර්ම දේශනය</h3>
+        <p class="text-xl text-gray-500 dark:text-gray-500">පාසලේ 100 වන ජන්ම දිනයට අනුගාමීව රාත්‍රී ධර්ම දේශනයක් සිදු කිරීමට නියමිතය.</p>
+      </li>
+      <li class="mb-10 ml-4">
+        <div class="absolute w-3 h-3 bg-red-200 rounded-full mt-1.5 -left-1.5 border border-white dark:border-red-900 dark:bg-red-700"></div>
+        <time class="mb-1 text-base font-medium leading-none text-gray-400 dark:text-gray-500">2023 ඔක්තෝම්බර් 18</time>       
+        <h3 class="text-4xl font-extrabold text-gray-900">සාංඝික දානමය පිංකම</h3>
+        <p class="text-xl text-gray-500 dark:text-gray-500">පාසල් 100 ජන්ම දිනය නිමිත්තෙන් සාංඝික දානමය පිංකමක් මෙදිනට සංවිධානය කර ඇත.</p>
+      </li>
+  </ol>
+  <br><br>
+  
+<div class="max-container">
+  <h1 class="sinhala-title"></h1><br>
+  <a href="images/certifi.jpg" class="flex flex-col items-center shadow border-red-200 rounded-lg shadow md:flex-row  hover:bg-red-100 dark:border-gray-700 dark:hover:bg-red-100">
+    <img class="object-cover w-full rounded-t-lg h-96 md:h-auto md:w-48 md:rounded-lg  md:rounded-s-lg" src="images/certifi.jpg" alt="">
+    <div class="flex flex-col justify-between p-4 leading-normal">
+        <p class="text-xl text-gray-500 dark:text-gray-500">ශිෂ්‍යත්ව විභාගයේ ප්‍රතිපල මත "වයඹ අබිමන්" සහතිකයෙන් තිසෝගම ශ්‍රීපාලි මහා විද්‍යාලය මීට සුළු මොහොතකට පෙර සම්මානයට පාත්‍ර වූ බව සතුටින් දැනුම් දෙමි. මෙම සහතිකය ලබා ගැනීමට දායක වූ හේරත් ගුරුතුමාට හා ගීතා කුලසිංහ ගුරුතුමියටත් ප්‍රථමික අංශයේ අනෙකුත් ගුරුභාවතුන්ටත්, විවිධ ආකාරයෙන් සහය වූ අනෙකුත් අංශ වල අධ්‍යන හා අනධ්‍යන කාර්යමණ්ඩලයේ සියළුම දෙනාටත්, දෙමාපියන් හා සිසු දරුදරියන්ටත් විද්‍යාලය වෙනුවෙන් ස්තුතිය පුද කරමි.
+          <br><br>විදුහල්පති.</p>
+    </div>
+  </a>
+
+<br><h1 class="sinhala-title"></h1><br>
+</div>
 <br><br>
+
+<section class="bg-center bg-no-repeat bg-[url('./images/jumbo.jpg')] bg-gray-700 bg-blend-multiply">
+    <div class="px-4 mx-auto max-w-screen-xl text-center py-10">
+        <h1 class="mb-4 text-4xl font-extrabold tracking-tight leading-none text-white md:text-5xl lg:text-6xl">කුලි තිසෝගම ශ්‍රීපාලි මහා විද්‍යාලය පිළිබඳ කෙටි හැඳින්වීමක්</h1>
+        <p class="mb-8 text-lg font-normal text-gray-300 lg:text-xl sm:px-16 lg:px-48">ඇති රමණීය වූ සත්කෝරළයට අයත් කිණියම කොරළයේ දැදුරු ඔය මිටියාවතේ තිසෝගම ග්‍රාමය පිහිටා ඇත. බිංගිරිය ප්‍රධාන නගරය කේන්ද්‍ර කර ගත් තිසෝගම ග්‍රාමයට හලාවත කුරුණෑගල මාර්ගයේ බෝවත්ත හන්දියෙන් හැරී කිලෝමීටර් පහක පමණ දුරකින් ලගා විය හැකිය. විද්‍යාලය සතු තොරතුරු අනුව ක්‍රි.ව. 1923 වප් මස 01 වන දින සිසුන් 12ක් සහිතව ආරම්භ කර ඇත. දිනෙන් දින දියුණුවේ හිරු එලිය ලබමින් ඉදිරියට පැමිණි මෙම විදුහල වර්ෂ 1980 ජනවාරි මස 01 දින 1C වර්ගයේ මහා විද්‍යාලයක් ලෙස උසස් කර ඇත. ඒ වන විට විදුහලේ අධ්‍යාපනය ලැබූ පිරිස 340ක් වු අතර ආචාර්ය මණ්ඩලය 18 දෙනෙකුගෙන් සමන්විත වී තිබුණි.</p>
+        <p class="mb-8 text-lg font-normal text-gray-300 lg:text-xl sm:px-16 lg:px-48">මහා විද්‍යාලයක් බවට පත් තිසෝගම ශ්‍රීපාලිය වර්ෂ 1992 වන විට සිසුන් 517ක් සහිත සමාන්තර පංතිවලින් යුත් දීප්තිමත් යුගයකට එළඹී තිබුණි. ගුරු හිඟය හා විවිධ දුෂ්කරතා මධ්‍යයේ ඉදිරියට ආ විදුහලේ ඉදිරි ගමනට 2000 වසරේ ඇති වූ නව අධ්‍යාපන ප්‍රතිසංස්කරණ යටතේ අ.පො.ස (උ.පෙළ) පංති ඉවත් කිරීම තුලින් විශාල බාධකයක් ඇති විය. නමුත් 2006 වසරේ අ.පො.ස.(උ.පෙළ) පංති නැවත ආරම්භ කිරීමට හැකි විය. ඒ අනුව විදුහලේ අදවන විට 1 ශ්‍රේණියේ සිට 13 ශ්‍රේණිය දක්වා පංති සහිත පාසලක් බවට පත් වී ඇත.</p>
+        <p class="mb-8 text-lg font-normal text-gray-300 lg:text-xl sm:px-16 lg:px-48">ග්‍රාම නිලධාරී වසම් හතරක පෝෂිත ප්‍රදේශයකින් යුත් තිසෝගම ශ්‍රීපාලි මහා විද්‍යාලයේ වර්තමාන ශිෂ්‍ය සංඛ්‍යාව 375ක් පමණ වේ. සමාන්‍තර ශ්‍රේණි නොමැත.</p>
+    </div>
+</section>
+<br>
 
 
 <div class="max-container">
-  <h1 class="sinhala-title">කුලි තිසෝගම ශ්‍රීපාලි මහා විද්‍යාලය පිළිබඳ කෙටි හැඳින්වීමක්.....</h1><br>
-  <h2 class="sinhala-content">
-    <p>ඇති රමණීය වූ සත්කෝරළයට අයත් කිණියම කොරළයේ දැදුරු ඔය මිටියාවතේ තිසෝගම ග්‍රාමය පිහිටා ඇත. බිංගිරිය ප්‍රධාන නගරය කේන්ද්‍ර කර ගත් තිසෝගම ග්‍රාමයට හලාවත කුරුණෑගල මාර්ගයේ බෝවත්ත හන්දියෙන් හැරී කිලෝමීටර් පහක පමණ දුරකින් ලගා විය හැකිය. විද්‍යාලය සතු තොරතුරු අනුව ක්‍රි.ව. 1923 වප් මස 01 වන දින සිසුන් 12ක් සහිතව ආරම්භ කර ඇත. දිනෙන් දින දියුණුවේ හිරු එලිය ලබමින් ඉදිරියට පැමිණි මෙම විදුහල වර්ෂ 1980 ජනවාරි මස 01 දින 1C වර්ගයේ මහා විද්‍යාලයක් ලෙස උසස් කර ඇත. ඒ වන විට විදුහලේ අධ්‍යාපනය ලැබූ පිරිස 340ක් වු අතර ආචාර්ය මණ්ඩලය 18 දෙනෙකුගෙන් සමන්විත වී තිබුණි.
-      </p>
-    <p>මහා විද්‍යාලයක් බවට පත් තිසෝගම ශ්‍රීපාලිය වර්ෂ 1992 වන විට සිසුන් 517ක් සහිත සමාන්තර පංතිවලින් යුත් දීප්තිමත් යුගයකට එළඹී තිබුණි. ගුරු හිඟය හා විවිධ දුෂ්කරතා මධ්‍යයේ ඉදිරියට ආ විදුහලේ ඉදිරි ගමනට 2000 වසරේ ඇති වූ නව අධ්‍යාපන ප්‍රතිසංස්කරණ යටතේ අ.පො.ස (උ.පෙළ) පංති ඉවත් කිරීම තුලින් විශාල බාධකයක් ඇති විය. නමුත් 2006 වසරේ අ.පො.ස.(උ.පෙළ) පංති නැවත ආරම්භ කිරීමට හැකි විය. ඒ අනුව විදුහලේ අදවන විට 1 ශ්‍රේණියේ සිට 13 ශ්‍රේණිය දක්වා පංති සහිත පාසලක් බවට පත් වී ඇත.</p>
-    <p>ග්‍රාම නිලධාරී වසම් හතරක පෝෂිත ප්‍රදේශයකින් යුත් තිසෝගම ශ්‍රීපාලි මහා විද්‍යාලයේ වර්තමාන ශිෂ්‍ය සංඛ්‍යාව 375ක් පමණ වේ. සමාන්‍තර ශ්‍රේණි නොමැත.</p>
-  </h2>
-  
-  <br>
-  
-  
   <h1 class="sinhala-title">පාසලේ වත්මන් පරිපාලනය</h1><br>
     <!-- Admin -->
   
@@ -332,31 +341,34 @@
   
       </div>
   </div>
+</div>
   
 
  
   <br>
-  
+  <section class="bg-center bg-no-repeat bg-[url('./images/jumbo2.jpg')] bg-gray-700 bg-blend-multiply">
   <div class="max-container">
-  <h1 class="sinhala-title">අපගේ දැක්ම</h1><br>
-  <h2 class="sinhala-content">ප්‍රශස්ත අධ්‍යාපනයක් තුළින් විශිෂ්ට දරුවෙක්</h2>
+  <h1 class="sinhala-title text-white">අපගේ දැක්ම</h1><br>
+  <h2 class="sinhala-content text-white">ප්‍රශස්ත අධ්‍යාපනයක් තුළින් විශිෂ්ට දරුවෙක්</h2>
   <br><br>
-  <h1 class="sinhala-title">අපගේ මෙහෙවර</h1><br>
-  <h2 class="sinhala-content">දැනුම හා යහගුණය පිරි නිපුණතා සපිරි දරුවෙකු විෂය බාහිර ක්‍රියාකාරකම් මගින් ගොඩනැංවීම අපගේ මෙහෙවරයි.</h2>
+  <h1 class="sinhala-title text-white">අපගේ මෙහෙවර</h1><br>
+  <h2 class="sinhala-content text-white">දැනුම හා යහගුණය පිරි නිපුණතා සපිරි දරුවෙකු විෂය බාහිර ක්‍රියාකාරකම් මගින් ගොඩනැංවීම අපගේ මෙහෙවරයි.</h2>
   <br>
-  <h1 class="sinhala-title">පාසල් ගීතය</h1><br>
-  <h2 class="sinhala-content"><p>ජනමත නන්දන ජය හඬ නංවන<br> සිසු අඹරේ සැමදා<br> තිසෝගම ශ්‍රී පාලි විදුමව්<br> අපේ නිධානය වේ<br> 
-    ගුරු දෙගුරුන් පා සෙවනේ<br> සුචරිත ගුණ දම් නිති වඩලා<br> ඔබේ නම සුරකිමු<br> ඔබේ ගුණ සමරමු<br> බැති කුසුමින් සරසා<br><br>
+  <h1 class="sinhala-title text-white">පාසල් ගීතය</h1><br>
+  <h2 class="sinhala-content text-white"><p>ජනමන නන්දන ජය හඬ නංවන<br> සිසු අඹරේ සැමදා<br> තිසෝගම ශ්‍රී පාලි විදුමව්<br> අපේ නිධානය වේ<br> 
+    ගුරු දෙගුරුන් පා සෙවනේ<br> සුචරිත ගුණ දම් නිති වඩලා<br> ඔබේ නම සුරකිමු<br> ඔබෙ ගුණ සමරමු<br> බැති කුසුමින් සරසා<br><br>
     
-    පත පොත කියවන<br> පොඩි අප නැලවෙන<br> ඔබ තුරුලේ සැමදා<br> නිදහස් හෙළ දැය<br> වැඩුමට බල ඇති<br> නැණ නුවණින් නිපුනා<br><br>
+    පත පොත කියවන<br> පොඩි අප නැලවෙන<br> ඔබ තුරුලේ සැමදා<br> නිදහස් හෙළ දැය<br> වැඩුමට බල ඇති<br> නැණ නුවණින් නිපුන<br><br>
     
     විදු එළියෙන් අප පුබුදා<br> යහමග පෙන්වන සෙනෙහසිනේ<br> දිය ගොඩ නංවන මහවිරු පිරිසක්<br> හදනු වඩනු මව්නේ<br><br>
     
     ජනමන නන්දන ජයහඬ නංවන<br> සිසු අඹරේ සැමදා....<br> තිසෝගම ශ්‍රීපාලි විදුමව්<br> අපේ නිධානය වේ.<br><br></p>
     </h2>
     </div>
+  </section>
+
     <br>
-</div>
+
 
 <!-- footer -->
 <footer class="footer">

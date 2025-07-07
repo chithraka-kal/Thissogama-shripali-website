@@ -23,33 +23,44 @@
           @apply text-xl;
         }
       }
+    
+    body {
+      background-color: rgba(235, 235, 235, 0.514) ;
+      
+    }
+
     </style>
     <!-- News slider css -->
     <!-- Swiper CSS -->
     <link rel="stylesheet" href="css/swiper-bundle.min.css" />
     <!-- CSS -->
     <link rel="stylesheet" href="css/recent.css" /> 
-
+    <!-- font Css -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Abhaya+Libre:wght@400;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/font.css">
     <!-- admin Css -->
     <link rel="stylesheet" href="css/admin.css">
     <!-- footer CSS -->
     <link rel="stylesheet" href="css/footer.css">
+
 
   </head>
   <body>
     <nav class="bg-white sticky top-0 shadow-md py-1 z-10">
       <div class="max-container flex justify-between items-center">
         <img
-          class="w-[120px] max-md:w-[100px]"
-          src="./images/badge.jpeg"
+          class="w-[90px] max-md:w-[70px]"
+          src="./images/logo.png"
           alt="logo"
         />
         <div class="flex gap-10 text-base text-gray-500 max-md:hidden">
-          <a class="hover:text-blue-600" href="#">Home</a>
-          <a class="hover:text-blue-600" href="#">Gallery</a>
-          <a class="hover:text-blue-600" href="#">Events</a>
-          <a class="hover:text-blue-600" href="#">Contact us</a>
-          <a class="hover:text-blue-600" href="#">News</a>
+          <a class="hover:text-red-600" href="index.html">Home</a>
+          <a class="hover:text-red-600" href="gallery.html">Gallery</a>
+          <a class="hover:text-red-600" href="news.html">News</a>
+          <a class="hover:text-red-600" href="contactus.html">Contact us</a>
+          <a class="hover:text-red-600" href="application.html">Applications</a>
         </div>
         <i
           class="fa-solid fa-bars side-icon md:hidden mr-10"
@@ -64,15 +75,15 @@
     >
       <div class="w-[50%]" onclick="hidebar()"></div>
       <div
-        class="flex justify-between w-[50%] bg-blue-800 text-lg text-white p-5"
+        class="flex justify-between w-[50%] bg-red-800 text-lg text-white px-6 pt-12"
       >
-        <div class="flex flex-col gap-6">
-          <a href="#">Home</a>
-          <a href="#">Gallery</a>
-          <a href="#">Events</a>
-          <a href="#">Contact us</a>
-          <a href="#">News</a>
-        </div>
+      <div class="flex flex-col gap-6">
+        <a class="hover:text-yellow-600" href="index.html">Home</a>
+        <a class="hover:text-yellow-600" href="gallery.html">Gallery</a>
+        <a class="hover:text-yellow-600" href="news.html">News</a>
+        <a class="hover:text-yellow-600" href="contactus.html">Contact us</a>
+        <a class="hover:text-yellow-600" href="application.html">Applications</a>
+      </div>
         <i class="fa-solid fa-xmark side-icon" onclick="hidebar()"></i>
       </div>
     </div>
@@ -83,8 +94,8 @@
               <div class="container">
                  <center> <img class="hero-image" alt="hero" src="images/avuruducover.jpeg"> </center>
                   <div class="hero-content">
-                      <h1 class="hero-title">Microdosing synth tattooed vexillologist</h1>
-                      <p class="hero-description">Meggings kinfolk echo park stumptown DIY, kale chips beard jianbing tousled. Chambray dreamcatcher trust fund, kitsch vice godard disrupt ramps hexagon mustache umami snackwave tilde chillwave ugh. Pour-over meditation PBR&B pickled ennui celiac mlkshk freegan photo booth af fingerstache pitchfork.</p>
+                        <h1 class="sinhala-title">අලුත් අවුරුදු උත්සවය</h1><br>
+                      <p class="text-xl">සිංහල අවුරුදු නැකත් චාරිත්‍ර සඳහා මූලිකත්වය ලබාදෙමින් ශ්‍රී පාලියේ සිංහල දෙමළ අලුත් අවුරුදු උත්සවයක් සිසුන්ගේ මූලිකත්වයෙන් 2023/04/17 දින පැවැත්විය.</p>
                   </div>
               </div>
           </section>
@@ -140,6 +151,26 @@
           </div>
         </section>
 
+        <!-- footer -->
+<footer class="footer">
+  <div class="container">
+      <div class="links">
+          <a href="index.html">Home</a>
+          <a href="gallery.html">Gallery</a>
+          <a href="news.html">News</a>
+          <a href="contactus.html">Contact us</a>
+          <a href="application.html">Applications</a>
+      </div>
+  </div>
+  <hr class="divider">
+  <div class="footer-info">
+      <p>&copy; Copyright 2023. All Rights Reserved.</p>
+  </div>
+</footer>
+
+  
+    <script src="js/swiper-bundle.min.js"></script>
+    <script src="js/recent.js"></script>
   <script>
     const sidebar = document.getElementById("sidebar");
     function opens() {

@@ -23,19 +23,27 @@
           @apply text-xl;
         }
       }
+    
+    body {
+      background-color: rgba(235, 235, 235, 0.514) ;
+      
+    }
+
     </style>
     <!-- News slider css -->
     <!-- Swiper CSS -->
     <link rel="stylesheet" href="css/swiper-bundle.min.css" />
     <!-- CSS -->
     <link rel="stylesheet" href="css/recent.css" /> 
-
+    <!-- font Css -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Abhaya+Libre:wght@400;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/font.css">
     <!-- admin Css -->
     <link rel="stylesheet" href="css/admin.css">
     <!-- footer CSS -->
     <link rel="stylesheet" href="css/footer.css">
-    <!-- Font CSS -->
-    <link rel="stylesheet" href="css/font.css">
 
 
   </head>
@@ -43,16 +51,16 @@
     <nav class="bg-white sticky top-0 shadow-md py-1 z-10">
       <div class="max-container flex justify-between items-center">
         <img
-          class="w-[120px] max-md:w-[100px]"
-          src="./images/badge.jpeg"
+          class="w-[90px] max-md:w-[70px]"
+          src="./images/logo.png"
           alt="logo"
         />
         <div class="flex gap-10 text-base text-gray-500 max-md:hidden">
-          <a class="hover:text-blue-600" href="#">Home</a>
-          <a class="hover:text-blue-600" href="#">Gallery</a>
-          <a class="hover:text-blue-600" href="#">Events</a>
-          <a class="hover:text-blue-600" href="#">Contact us</a>
-          <a class="hover:text-blue-600" href="#">News</a>
+          <a class="hover:text-red-600" href="index.html">Home</a>
+          <a class="hover:text-red-600" href="gallery.html">Gallery</a>
+          <a class="hover:text-red-600" href="news.html">News</a>
+          <a class="hover:text-red-600" href="contactus.html">Contact us</a>
+          <a class="hover:text-red-600" href="application.html">Applications</a>
         </div>
         <i
           class="fa-solid fa-bars side-icon md:hidden mr-10"
@@ -67,18 +75,21 @@
     >
       <div class="w-[50%]" onclick="hidebar()"></div>
       <div
-        class="flex justify-between w-[50%] bg-blue-800 text-lg text-white p-5"
+        class="flex justify-between w-[50%] bg-red-800 text-lg text-white px-6 pt-12"
       >
-        <div class="flex flex-col gap-6">
-          <a href="#">Home</a>
-          <a href="#">Gallery</a>
-          <a href="#">Events</a>
-          <a href="#">Contact us</a>
-          <a href="#">News</a>
-        </div>
+      <div class="flex flex-col gap-6">
+        <a class="hover:text-yellow-600" href="index.html">Home</a>
+        <a class="hover:text-yellow-600" href="gallery.html">Gallery</a>
+        <a class="hover:text-yellow-600" href="news.html">News</a>
+        <a class="hover:text-yellow-600" href="contactus.html">Contact us</a>
+        <a class="hover:text-yellow-600" href="application.html">Applications</a>
+      </div>
         <i class="fa-solid fa-xmark side-icon" onclick="hidebar()"></i>
       </div>
     </div>
+
+
+
 <br><br>
 <br><h1 class="sinhala-title">සම්බන්ධ වන්න</h1><br>
     <div class="max-container">
@@ -113,11 +124,110 @@
       <section>
 
         <div>
-            <iframe width="100%" height="250px" frameborder="0" title="map" marginheight="0" marginwidth="0" scrolling="no" src="https://maps.google.com/maps?width=100%&amp;height=600&amp;hl=en&amp;q=%C4%B0zmir+(My%20Business%20Name)&amp;ie=UTF8&amp;t=&amp;z=14&amp;iwloc=B&amp;output=embed"></iframe>
-        </div>
+            <iframe width="100%" height="250px" frameborder="0" title="map" marginheight="0" marginwidth="0" scrolling="no" src="https://maps.google.com/maps?width=658&amp;height=399&amp;hl=en&amp;q=thissogama sripali&amp;t=p&amp;z=16&amp;ie=UTF8&amp;iwloc=B&amp;output=embed" width="300" height="250" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        
+          </div>
+          
     
     </section>
+    </div>
+  
+
+    <br>
+    <div class="bg-white py-6 sm:py-8 lg:py-12 b p-2 max-container">
+      <div class="mx-auto max-w-screen-xl px-4 md:px-8">
+        <!-- text - start -->
+        <div class="mb-10 md:mb-16">
+          <h2 class="mb-4 text-center text-2xl font-bold text-gray-800 md:mb-6 lg:text-3xl">Meet the Developers</h2>
+          <p class="mx-auto max-w-screen-md text-center text-gray-500 md:text-lg">Reach out to us for all your web development needs and make your dream website in to reality!!</p>
+        </div>
+        <!-- text - end -->
+    
+        <div class="flex gap-20 justify-center"> <!-- Reduced the gap-y value here -->
+          <div class="flex flex-col items-center">
+            <div class="mb-2 h-24 w-24 overflow-hidden rounded-full bg-gray-100 shadow-lg md:mb-4 md:h-32 md:w-32">
+              <img src="images/dev1.jpg" loading="lazy" alt="Photo by Radu Florin" class="h-full w-full object-cover object-center" />
+            </div>
+    
+            <div>
+              <div class="text-center font-bold text-indigo-500 md:text-lg">Chithraka Kalanamith</div>
+              <p class="mb-3 text-center text-sm text-gray-500 md:mb-4 md:text-base">Frontend/Backend DEVELOPER</p>
+    
+              <!-- social - start -->
+              <div class="flex justify-center">
+                <div class="flex gap-4">
+                  <a href="https://www.linkedin.com/in/chithraka-kalanamith/" target="_blank" class="text-gray-400 transition duration-100 hover:text-gray-500 active:text-gray-600">
+                    <svg class="h-6 w-6" width="24" height="24" viewBox="0 0 24 24" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z" />
+                    </svg>
+                  </a>
+                  
+                  <a href="https://web.facebook.com/chithraka.kalanamith" target="_blank" class="text-gray-400 transition duration-100 hover:text-gray-500 active:text-gray-600">
+                    <svg class="h-6 w-6" width="28" height="28" viewBox="0 0 24 24" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M2.00195 12.002C2.00312 16.9214 5.58036 21.1101 10.439 21.881V14.892H7.90195V12.002H10.442V9.80204C10.3284 8.75958 10.6845 7.72064 11.4136 6.96698C12.1427 6.21332 13.1693 5.82306 14.215 5.90204C14.9655 5.91417 15.7141 5.98101 16.455 6.10205V8.56104H15.191C14.7558 8.50405 14.3183 8.64777 14.0017 8.95171C13.6851 9.25566 13.5237 9.68693 13.563 10.124V12.002H16.334L15.891 14.893H13.563V21.881C18.8174 21.0506 22.502 16.2518 21.9475 10.9611C21.3929 5.67041 16.7932 1.73997 11.4808 2.01722C6.16831 2.29447 2.0028 6.68235 2.00195 12.002Z" />
+                    </svg>
+                  </a>
+                </div>
+              </div>
+              <!-- social - end -->
+            </div>
+          </div>
+          <!-- person - end -->
+    
+          <div class="flex flex-col items-center">
+            <div class="mb-2 h-24 w-24 overflow-hidden rounded-full bg-gray-100 shadow-lg md:mb-4 md:h-32 md:w-32">
+              <img src="images/dev2.jpg" loading="lazy" alt="Photo by Radu Florin" class="h-full w-full object-cover object-center" />
+            </div>
+    
+            <div>
+              <div class="text-center font-bold text-indigo-500 md:text-lg">Nipun Avishka De Zoysa</div>
+              <p class="mb-3 text-center text-sm text-gray-500 md:mb-4 md:text-base">Frontend/Backend DEVELOPER</p>
+    
+              <!-- social - start -->
+              <div class="flex justify-center">
+                <div class="flex gap-4">
+                  <a href="https://www.linkedin.com/in/nipun-avishka-de-zoysa/" target="_blank" class="text-gray-400 transition duration-100 hover:text-gray-500 active:text-gray-600">
+                    <svg class="h-6 w-6" width="24" height="24" viewBox="0 0 24 24" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z" />
+                    </svg>
+                  </a>
+    
+                  <a href="https://web.facebook.com/nipun.avishka.90" target="_blank" class="text-gray-400 transition duration-100 hover:text-gray-500 active:text-gray-600">
+                    <svg class="h-6 w-6" width="28" height="28" viewBox="0 0 24 24" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M2.00195 12.002C2.00312 16.9214 5.58036 21.1101 10.439 21.881V14.892H7.90195V12.002H10.442V9.80204C10.3284 8.75958 10.6845 7.72064 11.4136 6.96698C12.1427 6.21332 13.1693 5.82306 14.215 5.90204C14.9655 5.91417 15.7141 5.98101 16.455 6.10205V8.56104H15.191C14.7558 8.50405 14.3183 8.64777 14.0017 8.95171C13.6851 9.25566 13.5237 9.68693 13.563 10.124V12.002H16.334L15.891 14.893H13.563V21.881C18.8174 21.0506 22.502 16.2518 21.9475 10.9611C21.3929 5.67041 16.7932 1.73997 11.4808 2.01722C6.16831 2.29447 2.0028 6.68235 2.00195 12.002Z" />
+                    </svg>
+                  </a>
+                </div>
+              </div>
+              <!-- social - end -->
+            </div>
+          </div>
+          <!-- person - end -->
+        </div>
+      </div>
+    </div>
+    <br>
       
+<!-- footer -->
+<footer class="footer">
+  <div class="container">
+      <div class="links">
+          <a href="index.html">Home</a>
+          <a href="gallery.html">Gallery</a>
+          <a href="news.html">News</a>
+          <a href="contactus.html">Contact us</a>
+          <a href="application.html">Applications</a>
+      </div>
+  </div>
+  <hr class="divider">
+  <div class="footer-info">
+      <p>&copy; Copyright 2023. All Rights Reserved.</p>
+  </div>
+</footer>
+
+  
+    <script src="js/swiper-bundle.min.js"></script>
+    <script src="js/recent.js"></script>
 
     <script>
         const sidebar = document.getElementById("sidebar");
